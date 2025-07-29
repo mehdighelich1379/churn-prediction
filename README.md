@@ -21,8 +21,9 @@ CUSTOMER_CHURN/
 │   │   └── XGBClassifier.joblib  # Final saved model (XGBoost)
 │   ├── utils/              # Utility functions
 │   │   ├── init.py
-│   │   └── main.py         # Entry point if needed
+│   
 │   ├── preprocess.py       # Preprocessing logic (used in pipeline)
+|   ├── main.py
 ├── README.md               # Project documentation
 ├── requirments.txt         # Project dependencies
 
