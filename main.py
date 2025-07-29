@@ -8,16 +8,16 @@ from src.utils.metrics import show_results, Cv_results
 def main():
     data_path = "data/customer_churn_dataset-training-master.csv"
     base_model= XGBClassifier(
-        n_estimators=300,        # تعداد درخت‌ها
-        learning_rate=0.05,       # نرخ یادگیری
-        max_depth=6,             # بیشینه عمق هر درخت
-        subsample=0.8,           # درصد نمونه‌گیری از داده‌ها برای هر درخت
-        gamma=0,                 # حداقل کاهش لازم برای تقسیم گره
+        n_estimators=300,        
+        learning_rate=0.05,       
+        max_depth=6,             
+        subsample=0.8,            
+        gamma=0,                 
         reg_alpha=0,             # L1 regularization term
         reg_lambda=1,            # L2 regularization term
-        use_label_encoder=False, # جلوگیری از اخطار نسخه‌های قدیمی
-        eval_metric='logloss',   # معیار ارزیابی
-        random_state=42          # بازتولیدپذیری
+        use_label_encoder=False, 
+        eval_metric='logloss',  
+        random_state=42         
     )
 
     print("🔧 Training on old data...")
