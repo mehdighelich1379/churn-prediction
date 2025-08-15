@@ -2,7 +2,6 @@
 
 A machine learning project to predict customer churn using structured data. The goal is to build a reliable model that performs well both on synthetic training data and real-world data with different distributions.
 
-
 ---
 
 📁 Project Structure
