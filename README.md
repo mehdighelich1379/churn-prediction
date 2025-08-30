@@ -69,13 +69,13 @@ This improved accuracy on real data while sacrificing some accuracy on the synth
 ## 📊 Evaluation Results
 
 ### Confusion Matrix
-![Confusion Matrix](image/Confusion_Matrix.png)
+![Confusion Matrix](./image/Confusion_Matrix.png)
 
 ### Feature Importances
-![Feature Importances](image/feature_importances.png)
+![Feature Importances](./image/feature_importances.png)
 
 ### ROC Curve
-![ROC Curve](image/Roc_curve.png)
+![ROC Curve](./image/Roc_curve.png
 
 
 3. Final Model Pipeline
