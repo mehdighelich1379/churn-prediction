@@ -26,6 +26,7 @@ CUSTOMER_CHURN/
 ├── README.md               # Project documentation
 ├── requirments.txt         # Project dependencies
 
+```
 
 ---
 
@@ -69,14 +70,13 @@ This improved accuracy on real data while sacrificing some accuracy on the synth
 ## 📊 Evaluation Results
 
 ### Confusion Matrix
-<img src="image/Confusion_Matrix.png" width="500">
+![Confusion Matrix](./image/Confusion_Matrix.png)
 
 ### Feature Importances
-<img src="image/feature_importances.png" width="500">
+![Feature Importances](./image/feature_importances.png)
 
 ### ROC Curve
-<img src="image/Roc_curve.png" width="500">
-
+![ROC Curve](./image/Roc_curve.png)
 
 
 3. Final Model Pipeline
