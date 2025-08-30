@@ -1,4 +1,4 @@
-📊 Customer Churn Prediction
+<img width="1920" height="1080" alt="{5647C959-FF9A-4E4C-A76F-F7DB0F1A1E42}" src="https://github.com/user-attachments/assets/7a7ba79e-27c7-4f8a-8684-cc0fb2d46dda" />📊 Customer Churn Prediction
 
 A machine learning project to predict customer churn using structured data. The goal is to build a reliable model that performs well both on synthetic training data and real-world data with different distributions.
 
@@ -77,6 +77,7 @@ This improved accuracy on real data while sacrificing some accuracy on the synth
 ### ROC Curve
 <img src="image/Roc_curve.png" width="500">
 
+![Model Results](image/Confusion_Matrix.png)
 
 
 3. Final Model Pipeline
