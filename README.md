@@ -78,7 +78,13 @@ This improved accuracy on real data while sacrificing some accuracy on the synth
 ### ROC Curve
 ![ROC Curve](./image/Roc_curve.png)
 
+## 🔎 Insights from Feature Importances
 
+* **Contract Length (Monthly)** and **Total Spend** are by far the most influential features. This suggests that short-term contracts and high spending are strong indicators of churn risk.
+* **Support Calls** also plays a major role → customers who frequently contact support are more likely to leave.
+* **Payment Delay** is another key churn driver, highlighting financial discipline as an important predictor.
+* Behavioral variables like **Last Interaction** and **Age** have moderate importance.
+* Demographic and subscription-type variables (e.g., `Basic`, `Standard`, `Premium`, `Gender`) had relatively **low predictive power** compared to behavioral and financial features.
 
 3. Final Model Pipeline
 
