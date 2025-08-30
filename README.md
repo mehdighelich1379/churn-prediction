@@ -75,7 +75,7 @@ This improved accuracy on real data while sacrificing some accuracy on the synth
 ![Feature Importances](./image/feature_importances.png)
 
 ### ROC Curve
-![ROC Curve](./image/Roc_curve.png
+![ROC Curve](./image/Roc_curve.png)
 
 
 3. Final Model Pipeline
