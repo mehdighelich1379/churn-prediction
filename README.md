@@ -66,6 +66,16 @@ Real data had a different distribution, so the model was fine-tuned on 50% of th
 
 This improved accuracy on real data while sacrificing some accuracy on the synthetic dataset (acceptable tradeoff).
 
+## 📊 Evaluation Results
+
+### Confusion Matrix
+![Confusion Matrix](./image/Confusion_Matrix.png)
+
+### Feature Importances
+![Feature Importances](./image/feature_importances.png)
+
+### ROC Curve
+![ROC Curve](./image/Roc_curve.png)
 
 
 3. Final Model Pipeline
