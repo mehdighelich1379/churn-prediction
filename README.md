@@ -5,7 +5,7 @@ A machine learning project to predict customer churn using structured data. The 
 ---
 
 📁 Project Structure
-```bash
+
 CUSTOMER_CHURN/
 ├── data/                   # Raw and preprocessed datasets
 ├── notebook/               # Exploratory data analysis and model experiments
@@ -77,6 +77,7 @@ This improved accuracy on real data while sacrificing some accuracy on the synth
 
 ### ROC Curve
 ![ROC Curve](./image/Roc_curve.png)
+
 
 
 3. Final Model Pipeline
