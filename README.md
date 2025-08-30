@@ -5,7 +5,7 @@ A machine learning project to predict customer churn using structured data. The 
 ---
 
 📁 Project Structure
-
+```bashe
 CUSTOMER_CHURN/
 ├── data/                   # Raw and preprocessed datasets
 ├── notebook/               # Exploratory data analysis and model experiments
