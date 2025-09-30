@@ -153,11 +153,11 @@ POST /predict
 Sample Response
 ```json
 {
-  "churn_prediction": 1,
-  "churn_probability": [
-    0.0000005966444775399602,
-    0.9999994039535352
-  ]
+    "churn_prediction": 1,
+    "churn_probability": [
+        5.960464477539062e-07,
+        0.9999994039535522
+    ]
 }
 ```
 churn_prediction: 1 → customer likely to churn, 0 → customer will stay
