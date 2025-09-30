@@ -1,0 +1,12 @@
+{
+  "Age": 28,
+  "Gender": "Male",
+  "Tenure": 6,
+  "Usage_Frequency": 3,
+  "Support_Calls": 12,
+  "Payment_Delay": 20,
+  "Subscription_Type": "Basic",
+  "Contract_Length": "Monthly",
+  "Total_Spend": 300,
+  "Last_Interaction": 40
+}
