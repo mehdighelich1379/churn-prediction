@@ -5,12 +5,11 @@ from fastapi.responses import FileResponse
 import pandas as pd
 import joblib
 from pydantic import BaseModel
-
-pipe = joblib.load('src/models/XGBClassifier.joblib')
+from functools import lru_cache
 
 app = FastAPI()
 
-#  Add CORS middleware
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -19,12 +18,26 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-#  Serve static and HTML
-app.mount("/static", StaticFiles(directory="."), name="static")
 
-@app.get("/")
-def serve_homepage():
-    return FileResponse("index.html")
+@lru_cache()
+def load_model():
+    return joblib.load("src/models/XGBClassifier.joblib")
+
+
+app.mount("/image", StaticFiles(directory="image"), name="image")
+
+
+@app.get("/", response_class=FileResponse)
+async def serve_homepage():
+    return FileResponse(
+        "index.html",
+        headers={
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            "Pragma": "no-cache",
+            "Expires": "0",
+        },
+        media_type="text/html"
+    )
 
 
 class InputData(BaseModel):
@@ -42,6 +55,7 @@ class InputData(BaseModel):
 
 @app.post("/predict")
 def predict(data: InputData):
+    pipe = load_model()
     df = pd.DataFrame([data.dict()])
     df.rename(columns={
         "Usage_Frequency": "Usage Frequency",
