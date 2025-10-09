@@ -4,11 +4,13 @@ import pandas as pd
 import joblib
 from pydantic import BaseModel
 
+# Load model
 pipe = joblib.load('src/models/XGBClassifier.joblib')
 
+# Create app
 app = FastAPI()
 
-# ✅ Add CORS middleware
+# ✅ Allow all origins (for testing / public)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -17,6 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Input schema
 class InputData(BaseModel):
     Age: float
     Gender: str
@@ -31,7 +34,7 @@ class InputData(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "Customer churn API is live!"}
+    return {"message": "Customer churn API is live with CORS ✅"}
 
 @app.post("/predict")
 def predict(data: InputData):
@@ -45,6 +48,10 @@ def predict(data: InputData):
         "Total_Spend": "Total Spend",
         "Last_Interaction": "Last Interaction"
     }, inplace=True)
+
     pred = pipe.predict(df)
     prob = pipe.predict_proba(df)
-    return {"churn_prediction": int(pred[0]), "churn_probability": prob[0].tolist()}
+    return {
+        "churn_prediction": int(pred[0]),
+        "churn_probability": prob[0].tolist()
+    }
