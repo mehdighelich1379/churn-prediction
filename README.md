@@ -4,6 +4,18 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 > End-to-end Machine Learning project with **FastAPI** and **Docker**, predicting customer churn with production-ready deployment.
 
+---
+
+## 🌐 Live Demo
+
+The project is fully deployed and accessible online:
+
+👉 **[Try it Live on Railway 🚀](https://churn-prediction-production-6108.up.railway.app)**
+
+You can open the link, enter customer information, and see real-time predictions directly in your browser.
+
+---
+
 # 📊 Customer Churn Prediction
 
 A machine learning project to predict customer churn using structured data.  
